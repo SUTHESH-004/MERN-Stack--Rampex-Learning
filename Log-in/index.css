@@ -1,0 +1,29 @@
+:root {
+  --bg-color: #232529;
+  --sec-bg-color: #282a36;
+}
+body {
+  height: 100%;
+  background-color: var(--bg-color);
+}
+.section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 50%;
+  width: 30%;
+  background-color: var(--sec-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* margin: 10%; */
+}
+.login-header {
+  color: white;
+  margin: 10%;
+}
