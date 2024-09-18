@@ -1,6 +1,7 @@
 import { assets } from "./assets/images/assets";
 import Navbar from "./components/Navbar";
-
+import HomePage from "./pages/HomePage";
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
@@ -9,12 +10,10 @@ function App() {
         style={{
           backgroundImage: `url(${assets.staticWallpaper})`,
         }}
-      >
-        {" "}
-      </div>
-      <div className="fixed z-0 h-[100vh] w-[100vw]">
-        <Navbar />
-      </div>
+      ></div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   );
 }
